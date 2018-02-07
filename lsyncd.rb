@@ -6,7 +6,7 @@ class Lsyncd < Formula
   depends_on "cmake" => :build
   depends_on "lua"
 
-  xnu_headers = {
+   xnu_headers = {
     "10.7"     => ["xnu-1699.22.73.tar.gz",  "c9d24560af543e6099b6248bdbcef3581e7ba4af3afd92974719f7c5a8db5bd2"],
     "10.7.1"   => ["xnu-1699.22.81.tar.gz",  "b1422aadf0d3842f3c97e61178adfddb6596e67ba1d877da7f11e2f455fa8dec"],
     "10.7.2"   => ["xnu-1699.24.8.tar.gz",   "4268ce69799db51f1b48e400b6fa6a7041b266a1a5404034398aa51b7084b269"],
@@ -40,7 +40,13 @@ class Lsyncd < Formula
     "10.11.6"  => ["xnu-3248.60.10.tar.gz",  "295b69cee59f2a7419eab3d95744595fa8cd614716fb6ddc958b61dc088e1f7a"],
     "10.12"    => ["xnu-3789.1.32.tar.gz",   "5bff9606bf32d9ae11d964d8eb280ed9543e4e4fef1cc394d272d7b6ce3f1e55"],
     "10.12.1"  => ["xnu-3789.21.4.tar.gz",   "0e866d90f1b966ccb466ea0c7d4dd8f1e32d40132bbac5c21a857fb6c2522119"],
-    "10.12.2"  => ["xnu-3789.21.4.tar.gz",   "0e866d90f1b966ccb466ea0c7d4dd8f1e32d40132bbac5c21a857fb6c2522119"],
+    "10.12.2"  => ["xnu-3789.31.2.tar.gz",   "768087e43fd16e4ce93862070a91f4b8b47c8d27640b4c35d68bb49a2ca3e4bd"],
+    "10.12.3"  => ["xnu-3789.41.3.tar.gz",   "910a8a5d69330d635a5a716ae1d70a2c503c1700fba7612d3ce604feee4eb3dd"],
+    "10.12.4"  => ["xnu-3789.51.2.tar.gz",   "126c377a9f0b6364d6eb7618cb8ab863deab045c3d06338632f887e7e99261fa"],
+    "10.12.5"  => ["xnu-3789.60.24.tar.gz",  "00e0a95c0ba451863397680e9316dc579cbfacb114264cee417bceecaa256b22"],
+    "10.12.6"  => ["xnu-3789.70.16.tar.gz",  "e5b912036a7ceca92e7ada44ef4b264de928bd247a7c02c50604fd8f4f044bea"],
+    "10.13"    => ["xnu-4570.1.46.tar.gz",   "18c418c906d08acc7db471d0783269f50aeae73fff0aae0b61c848c4c926c767"],
+    "10.13.1"  => ["xnu-4570.1.46.tar.gz",   "18c418c906d08acc7db471d0783269f50aeae73fff0aae0b61c848c4c926c767"],
   }
 
   if xnu_headers.key? MacOS.full_version
